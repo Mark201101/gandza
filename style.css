@@ -168,14 +168,16 @@ nav a:hover{
 
 .hero{
 
-    height:100vh;
-
     background-image:
     linear-gradient(
-    rgba(0,0,0,.45),
-    rgba(0,0,0,.55)
+    rgba(0,0,0,.20),
+    rgba(0,0,0,.35)
     ),
-    url("images/hero.jpg");
+    url("gandza.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
 
     background-size:cover;
 
@@ -227,34 +229,26 @@ nav a:hover{
 
 .hero h1{
 
-    font-size:110px;
-
-    color:var(--gold);
-
-    margin-top:20px;
-
-    line-height:1;
+    color:#fff;
 
     text-shadow:
-    0 10px 30px rgba(0,0,0,.4);
+    0 4px 20px rgba(0,0,0,.7);
 
 }
 
 .hero h2{
 
-    font-size:42px;
+    color:#fff;
 
-    margin:20px 0;
+    text-shadow:
+    0 4px 20px rgba(0,0,0,.7);
 
 }
 
 .hero p{
 
-    max-width:760px;
-
-    margin:auto;
-
-    font-size:20px;
+    text-shadow:
+    0 3px 15px rgba(0,0,0,.7);
 
 }
 
@@ -890,7 +884,7 @@ nav a:hover{
     rgba(8,26,51,.92),
     rgba(8,26,51,.92)
     ),
-    url("images/hero.jpg");
+    url("hero.jpg");
 
     background-size:cover;
 
