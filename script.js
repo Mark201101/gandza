@@ -7,7 +7,19 @@ document.addEventListener("DOMContentLoaded", () => {
     // ===============================
     // HEADER SCROLL EFFECT
     // ===============================
+    const menuToggle =
+document.querySelector(".menu-toggle");
 
+const navMenu =
+document.querySelector("nav ul");
+
+menuToggle.addEventListener("click",()=>{
+
+    menuToggle.classList.toggle("active");
+
+    navMenu.classList.toggle("active");
+
+});
     const header = document.getElementById("header");
 
     window.addEventListener("scroll", () => {
@@ -333,5 +345,37 @@ document.head.appendChild(style);
 window.addEventListener("load", () => {
 
     document.body.style.opacity = "1";
+
+});
+
+document
+.querySelectorAll("nav ul a")
+.forEach(link=>{
+
+    link.addEventListener("click",()=>{
+
+        menuToggle.classList.remove("active");
+
+        navMenu.classList.remove("active");
+
+    });
+
+});
+const overlay =
+document.querySelector(".menu-overlay");
+
+menuToggle.addEventListener("click",()=>{
+
+    overlay.classList.toggle("active");
+
+});
+
+overlay.addEventListener("click",()=>{
+
+    menuToggle.classList.remove("active");
+
+    navMenu.classList.remove("active");
+
+    overlay.classList.remove("active");
 
 });
