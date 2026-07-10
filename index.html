@@ -14,7 +14,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 </head>
+<div class="lightbox">
 
+    <span class="close-lightbox">
+
+        ×
+
+    </span>
+
+    <img id="lightboxImg">
+
+</div>
 
 <body>
 
@@ -459,7 +469,7 @@
 
 
 
-<a href="#" class="btn">
+<a href="https://hy.wikipedia.org/wiki/%D5%8E%D5%A1%D5%B0%D5%A1%D5%B6_%D5%8F%D5%A5%D6%80%D5%B5%D5%A1%D5%B6" class="btn">
 
 Իմանալ ավելին
 
@@ -474,6 +484,25 @@
 
 
 </section><!-- BOOK SECTION -->
+
+<section class="section quote-generator">
+
+    <div class="section-title">
+        <span>ՏԵՐՅԱՆ</span>
+        <h2>Օրվա խոսքը</h2>
+    </div>
+
+    <div class="fact-box">
+
+        <p id="dailyQuote"></p>
+
+        <button id="newQuoteBtn" class="btn">
+            Նոր խոսք
+        </button>
+
+    </div>
+
+</section>
 
 <section class="section dark" id="book">
 
@@ -534,14 +563,6 @@
 </p>
 
 
-
-<a href="#" class="btn">
-
-Կարդալ ավելին
-
-</a>
-
-
 </div>
 
 
@@ -553,7 +574,33 @@
 
 
 
+<section class="section" id="compare">
 
+    <div class="section-title">
+        <span>ԺԱՄԱՆԱԿ</span>
+        <h2>Հին և նոր Գանձա</h2>
+    </div>
+
+    <div class="compare-container">
+
+        <img src="gandza.jpg" class="img-after">
+
+        <div class="img-before-wrapper">
+
+            <img src="old-gandza.jpg">
+
+        </div>
+
+    </div>
+
+    <input
+    type="range"
+    min="0"
+    max="100"
+    value="50"
+    id="compareSlider">
+
+</section>
 <!-- PLACES -->
 
 
@@ -668,7 +715,29 @@
 
 
 
+<section class="section dark">
 
+    <div class="section-title light">
+
+        <span>ԼՍԵԼ</span>
+
+        <h2>Տերյանի բանաստեղծություն</h2>
+
+    </div>
+
+    <div style="text-align:center">
+
+        <audio controls>
+
+            <source
+            src="teryan.mp3"
+            type="audio/mpeg">
+
+        </audio>
+
+    </div>
+
+</section>
 
 <!-- TIMELINE -->
 
@@ -898,7 +967,29 @@
 
 
 
+<section class="section">
 
+    <div class="section-title">
+
+        <span>ՓԱՍՏ</span>
+
+        <h2>Գիտե՞ք արդյոք</h2>
+
+    </div>
+
+    <div class="fact-box">
+
+        <p id="factText"></p>
+
+        <button id="factBtn" class="btn">
+
+            Նոր փաստ
+
+        </button>
+
+    </div>
+
+</section>
 
 <!-- GALLERY -->
 
@@ -953,17 +1044,25 @@
 
 </div>
 
-
 <div class="gallery-item">
-
-<img src="book.jpg" alt="Գանձա գիրք">
-
+    <img src="1.jpg" alt="Գանձայի բնություն">
+</div>
+<div class="gallery-item">
+    <img src="4.jpg" alt="Գանձայի բնություն">
+</div>
+<div class="gallery-item">
+    <img src="5.jpg" alt="Գանձայի բնություն">
+</div>
+<div class="gallery-item">
+    <img src="2.jpg" alt="Գանձայի բնություն">
 </div>
 
-
 <div class="gallery-item">
-
-<img src="teryan.jpg" alt="Վահան Տերյան">
+    <img src="3.jpg" alt="Գանձայի բնություն">
+</div>
+<div class="gallery-item">
+    <img src="Zoro-Teryan-3.jpg" alt="Գանձայի բնություն">
+</div>
 
 </div>
 

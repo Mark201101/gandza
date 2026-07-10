@@ -1504,3 +1504,124 @@ to{
     width:100%!important;
 
 }
+
+/* QUOTE + FACT */
+
+.fact-box{
+
+    max-width:800px;
+
+    margin:auto;
+
+    text-align:center;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    background:white;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.12);
+
+}
+
+.fact-box p{
+
+    font-size:22px;
+
+    margin-bottom:25px;
+
+}
+
+
+/* BEFORE AFTER */
+
+.compare-container{
+
+    position:relative;
+
+    max-width:1000px;
+
+    margin:auto;
+
+    overflow:hidden;
+
+    border-radius:25px;
+
+}
+
+.compare-container img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.img-before-wrapper{
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:50%;
+
+    overflow:hidden;
+
+}
+
+#compareSlider{
+
+    width:100%;
+
+    margin-top:20px;
+
+}
+
+
+/* LIGHTBOX */
+
+.lightbox{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.92);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:10000;
+
+}
+
+.lightbox img{
+
+    max-width:90%;
+
+    max-height:90%;
+
+    border-radius:15px;
+
+}
+
+.close-lightbox{
+
+    position:absolute;
+
+    top:30px;
+    right:40px;
+
+    color:white;
+
+    font-size:50px;
+
+    cursor:pointer;
+
+}

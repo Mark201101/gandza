@@ -411,29 +411,7 @@ link.classList.add("active-link");
 // ==============================
 
 
-const images =
-document.querySelectorAll("img");
 
-
-
-images.forEach(img=>{
-
-
-img.addEventListener("load",()=>{
-
-
-img.style.opacity="1";
-
-
-});
-
-
-img.style.transition=".5s";
-
-img.style.opacity="0";
-
-
-});
 
 
 
@@ -443,3 +421,174 @@ img.style.opacity="0";
 
 
 });
+
+/* =====================
+   ՕՐՎԱ ԽՈՍՔ
+===================== */
+
+const quotes = [
+
+"Ես սիրում եմ քո մեղմ երգը, իմ հեռավոր հայրենիք։",
+
+"Աշունը իմ հոգու եղանակն է։",
+
+"Սիրտս լցված է հեռավոր երազներով։",
+
+"Գիշերը երգում է իմ հոգու մեջ։",
+
+"Հայրենի բնությունը հավերժ ապրում է մարդու հոգում։"
+
+];
+
+const quoteElement =
+document.getElementById("dailyQuote");
+
+const quoteBtn =
+document.getElementById("newQuoteBtn");
+
+if(quoteElement){
+
+    function randomQuote(){
+
+        quoteElement.innerText =
+        quotes[
+            Math.floor(
+                Math.random()*quotes.length
+            )
+        ];
+
+    }
+
+    randomQuote();
+
+    quoteBtn.addEventListener(
+        "click",
+        randomQuote
+    );
+
+}
+
+
+/* =====================
+   ՓԱՍՏԵՐ
+===================== */
+
+const facts = [
+
+"Վահան Տերյանի հայրը քահանա էր։",
+
+"Տերյանը ծնվել է Գանձայում։",
+
+"Նա հայ սիմվոլիզմի առաջատարներից էր։",
+
+"Տերյանի տուն-թանգարանը գտնվում է Գանձայում։",
+
+"«Մթնշաղի անուրջներ»-ը նրա ամենահայտնի ժողովածուներից է։"
+
+];
+
+const factText =
+document.getElementById("factText");
+
+const factBtn =
+document.getElementById("factBtn");
+
+if(factText){
+
+    function randomFact(){
+
+        factText.innerText =
+        facts[
+            Math.floor(
+                Math.random()*facts.length
+            )
+        ];
+
+    }
+
+    randomFact();
+
+    factBtn.addEventListener(
+        "click",
+        randomFact
+    );
+
+}
+
+
+/* =====================
+   BEFORE AFTER
+===================== */
+
+const slider =
+document.getElementById(
+"compareSlider"
+);
+
+const before =
+document.querySelector(
+".img-before-wrapper"
+);
+
+if(slider){
+
+    slider.addEventListener(
+    "input",
+    ()=>{
+
+        before.style.width =
+        slider.value + "%";
+
+    });
+
+}
+
+
+/* =====================
+   LIGHTBOX
+===================== */
+
+const galleryImages =
+document.querySelectorAll(
+".gallery img"
+);
+
+const lightbox =
+document.querySelector(
+".lightbox"
+);
+
+const lightboxImg =
+document.getElementById(
+"lightboxImg"
+);
+
+const closeLightbox =
+document.querySelector(
+".close-lightbox"
+);
+
+galleryImages.forEach(img=>{
+
+    img.addEventListener("click",()=>{
+
+        lightbox.style.display="flex";
+
+        lightboxImg.src =
+        img.src;
+
+    });
+
+});
+
+if(closeLightbox){
+
+    closeLightbox.addEventListener(
+    "click",
+    ()=>{
+
+        lightbox.style.display="none";
+
+    });
+
+}
